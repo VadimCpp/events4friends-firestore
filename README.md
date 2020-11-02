@@ -4,7 +4,7 @@
 
 ## Формат мероприятия
 
-Коллекция (events)[https://console.firebase.google.com/u/0/project/events4friends/firestore/data~2Fevents]
+Коллекция [events](https://console.firebase.google.com/u/0/project/events4friends/firestore/data~2Fevents)
 
 Мероприятия создаются организаторами:
 
@@ -23,7 +23,7 @@
 
 ## Формат услуги
 
-Коллекция (2Fservices)[https://console.firebase.google.com/u/0/project/events4friends/firestore/data~2Fservices]
+Коллекция [services](https://console.firebase.google.com/u/0/project/events4friends/firestore/data~2Fservices)
 
 Услуги предоставляю участники сообщества:
 
@@ -45,7 +45,7 @@
 
 В чатах месседжера Telergam можно закрепить сообщение. Эта коллекция управляется только с помощью Телеграм-бота @events4friendsbot.
 
-Коллекция - (pinnedMessages)[https://console.firebase.google.com/u/0/project/events4friends/firestore/data~2FpinnedMessages]
+Коллекция - [pinnedMessages](https://console.firebase.google.com/u/0/project/events4friends/firestore/data~2FpinnedMessages)
 
 | поле        | тип    | обязательно | описание                                                                       |
 | ----------- | ------ | ----------- | ------------------------------------------------------------------------------ |
@@ -60,7 +60,7 @@
 
 Уведомления работаею для iOS и Android.
 
-Коллекция - (reminder)[https://console.firebase.google.com/u/0/project/events4friends/firestore/data~2Freminders]
+Коллекция - [reminder](https://console.firebase.google.com/u/0/project/events4friends/firestore/data~2Freminders)
 
 | поле        | тип    | обязательно | описание                                                                       |
 | ----------- | ------ | ----------- | ------------------------------------------------------------------------------ |
@@ -70,7 +70,9 @@
 
 ## Конфигурация
 
-Это - тестовая таблица. Пока содержит произвольную никак не связанную между собой информацию. Используется только в проекте сайта https://github.com/VadimCpp/events4friends.ru-react 
+Это - тестовая таблица. Пока содержит произвольную никак не связанную между собой информацию. Используется только в проекте сайта [events4friends.ru-react](https://github.com/VadimCpp/events4friends.ru-react)
+
+Коллекция - [config](https://console.firebase.google.com/u/0/project/events4friends/firestore/data~2Fconfig~2Fgeneral)
 
 | поле        | тип    | обязательно | описание                                                                       |
 | ----------- | ------ | ----------- | ------------------------------------------------------------------------------ |
