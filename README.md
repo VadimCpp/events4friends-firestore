@@ -70,12 +70,10 @@
 
 ## Конфигурация
 
-Это - тестовая таблица. Пока содержит произвольную никак не связанную между собой информацию. Используется только в проекте сайта [events4friends.ru-react](https://github.com/VadimCpp/events4friends.ru-react)
+Это - служебная таблица. Пока содержит Только номер версии. Используется только в проекте сайта [events4friends.ru-react](https://github.com/VadimCpp/events4friends.ru-react)
 
 Коллекция - [config](https://console.firebase.google.com/u/0/project/events4friends/firestore/data~2Fconfig~2Fgeneral)
 
 | поле        | тип    | обязательно | описание                                                                       |
 | ----------- | ------ | ----------- | ------------------------------------------------------------------------------ |
-| description   | string | да          | Описание сообщества                                                  |
-| name     | string | да          | Найменование сообщества                                               |
 | version | string  | да          | Версия изменений софта                                   |
