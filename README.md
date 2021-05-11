@@ -2,7 +2,7 @@
 
 Данные сайта хранятся в firebase. Основой сайта являются услуги и анонсы мероприятий. 
 
-## Формат мероприятия
+## Анонс
 
 Коллекция [events](https://console.firebase.google.com/u/0/project/events4friends/firestore/data~2Fevents)
 
@@ -21,7 +21,7 @@
 | start       | строка | да          | начало, dateTime, например "2019-09-14T11:00:00", ISO-8601                     |
 | end         | строка | нет         | конец, dateTime                                                                |
 
-## Формат услуги
+## Услуга
 
 Коллекция [services](https://console.firebase.google.com/u/0/project/events4friends/firestore/data~2Fservices)
 
