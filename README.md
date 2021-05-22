@@ -1,4 +1,4 @@
-# events4friends-firestore - описание базы данных
+# Описание коллекций firebase
 
 Данные сайта хранятся в firebase. Основой сайта являются услуги и анонсы мероприятий.
 
@@ -100,3 +100,39 @@
 | поле        | тип    | обязательно | описание                                                                       |
 | ----------- | ------ | ----------- | ------------------------------------------------------------------------------ |
 | version | string  | да          | Версия изменений софта                                   |
+
+# Security rules
+
+Тот небольшой "бэк", который есть. Код необходимо вставить в Security Rules вашей базы Firebase:
+
+```javascript
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /config/{a_config} {
+      allow read: if true;
+    }
+    match /communities/{a_community} {
+      allow read: if true;
+    }
+    match /services/{a_service} {
+      allow read: if true;
+      allow create: if request.auth.uid != null
+      						 && request.auth.token.firebase.sign_in_provider != 'anonymous';
+      allow delete, update: if request.auth.uid != null
+      						 && request.auth.token.email == resource.data.contact;
+    }
+    match /events/{an_event} {
+      allow read: if true;
+      allow create: if request.auth.uid != null
+      						 && request.auth.token.firebase.sign_in_provider != 'anonymous';
+      allow delete, update: if request.auth.uid != null
+      						 && request.auth.token.email == resource.data.contact;
+    }
+		match /reminders/{a_reminder} {
+      allow read: if false;
+			allow create, update: if request.auth.uid != null
+    }
+  }
+}
+```
